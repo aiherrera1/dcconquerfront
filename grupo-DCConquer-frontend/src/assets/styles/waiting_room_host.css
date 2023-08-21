@@ -1,0 +1,155 @@
+.wra-style{
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.wra-style .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wra-style .label {
+  padding: 30px 40px;
+  border: 3px solid #f7bc46;
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: #783f04;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.wra-style .box {
+  margin-top: 50px;
+  width: 45vw;
+  /* min-height: 10vw; */
+  display: flex;
+  flex-direction: column;
+  background-color: #783f04;
+  overflow-y: scroll;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid #f7bc46;
+}
+
+.wra-style .box p {
+  justify-self: center;
+  align-self: center;
+  font-size: large;
+}
+.wra-style .box::-webkit-scrollbar {
+  display: none;
+}
+
+.wra-style .player {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wra-style .player p {
+  border: 2px solid #f7bc46;
+  min-width: 10vw;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  align-content: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wra-style .player img {
+  border: 2px solid #f7bc46;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.wra-style .player button {
+  padding: 20px;
+  border: #f7bc46 2px solid;
+  background-color: #783f04;
+  height: 40px;
+  width: 15vw;
+  border-radius: 10px;
+  color: #f7bc46;
+  font-size: 15px;
+  margin-right: 20px;
+  font-family: "Berry Rotunda";
+  text-decoration: none;
+  display: flex;
+  /* justify-items: center; */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.wra-style .player button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.wra-style .request {
+  width: 50%;
+}
+
+.wra-style .action {
+  display: flex;
+  flex-direction: row;
+  width: 15vw;
+}
+.wra-style #accept {
+  background-color: green;
+}
+
+.wra-style #reject {
+  background-color: red;
+}
+
+.wra-style #accept:hover,
+.wra-style #reject:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wra-style .options {
+  margin-top: 30px;
+  width: 15vw;
+  height: 60px;
+  background-color: #783f04;
+  border: #f7bc46 solid;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Berry Rotunda";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wra-style .options  {
+  color: #f7bc46;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 60px;
+}
+.wra-style .options:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

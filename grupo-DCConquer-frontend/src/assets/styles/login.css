@@ -1,0 +1,88 @@
+.login-style {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.login-style .general-grid {
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.login-style .general-grid-items {
+  border-radius: 5px;
+  background-color: #783f04;
+  border: 2px solid #f7bc46;
+  color: #f7bc46;
+  justify-items: center;
+  padding: 15px 20px 10px 20px;
+  width: fit-content;
+}
+
+.login-style .form-grid {
+  display: grid;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+.login-style .log-in {
+  font-size: 40px;
+  padding: 30px 30px 20px 30px;
+}
+
+.login-style .inner-grid-1 {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  grid-gap: 5px;
+  padding: 20px 50px;
+}
+
+.login-style .inner-grid-items {
+  border: 1px solid #f7bc46;
+}
+
+.login-style .form_input {
+  border-radius: 5px;
+  background-color: #fef0bb;
+  font-family: "Algerian";
+  font-size: large;
+  height: 30px;
+  width: 35vw;
+}
+
+.login-style input {
+  padding: 5px;
+}
+
+.login-style .inner-grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  grid-gap: 20px;
+  padding: 20px 80px;
+}
+
+.login-style .button {
+  border-radius: 5px;
+  background-color: #783f04;
+  border: 2px solid #f7bc46;
+  color: #f7bc46;
+  font-family: "Berry Rotunda";
+  font-size: 30px;
+  justify-items: center;
+  padding: 18px 20px 10px 20px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.login-style .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

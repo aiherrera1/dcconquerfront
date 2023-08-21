@@ -1,0 +1,27 @@
+/* @font-face {
+  font-family: "Berry Rotunda";
+  src: url("../src/assets/fonts/perry-gothic/PERRYGOT.TTF") format("truetype");
+} */
+
+@font-face {
+  font-family: 'Berry Rotunda';
+  src: url('../src/assets/fonts/Berry_Rotunda.ttf') format("truetype");
+}
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Berry Rotunda";
+  font-size: 15px;
+  margin: 0px;
+  background-color: #54280b;
+}
+
+input {
+  font-family: "Berry Rotunda";
+}

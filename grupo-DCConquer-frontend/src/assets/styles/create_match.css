@@ -1,0 +1,101 @@
+.create-match-style {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.create-match-style body {
+    font-family: 'Berry Rotunda';
+    font-size: 15px;
+}
+
+.create-match-style input {
+    font-family: 'Berry Rotunda';
+}
+
+.create-match-style .general-grid {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.create-match-style .general-grid-items {
+    border-radius: 5px;
+    background-color: #783f04;
+    border: 2px solid #f7bc46;
+    color: #f7bc46;
+    justify-items: center;
+    padding: 15px 20px 10px 20px;
+    width: fit-content;
+}
+
+.create-match-style .form-grid {
+    margin-top: 0px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.create-match-style .sign-up {
+    font-size: 40px;
+    padding: 30px 30px 20px 30px;
+}
+
+.create-match-style .inner-grid-1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    grid-gap: 5px;
+    padding: 20px 50px;
+}
+
+.create-match-style .inner-grid-items {
+    border: 1px solid #f7bc46;
+}
+
+.create-match-style .form_input {
+    border-radius: 5px;
+    background-color: #fef0bb;
+    font-family: 'Algerian';
+    font-size: large;
+    height: 30px;
+    width: 300px;
+}
+
+.create-match-style .inner-grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 20px 80px;
+}
+
+.create-match-style .inner-grid-3 {
+    display: grid;
+    grid-gap: 0px;
+    grid-column-gap: 25px;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    text-align: center;
+    justify-items: center;
+}
+
+
+
+.create-match-style .button {
+    border-radius: 5px;
+    background-color: #783f04;
+    border: 2px solid #f7bc46;
+    color: #f7bc46;
+    font-family: 'Berry Rotunda';
+    font-size: 30px;
+    justify-items: center;
+    padding: 18px 20px 10px 20px;
+    width: fit-content;
+    text-decoration: none;
+}

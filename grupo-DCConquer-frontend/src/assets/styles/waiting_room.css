@@ -1,0 +1,116 @@
+.wr-style{
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.wr-style .page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wr-style .label {
+  margin-top: 50px;
+  width: 35vw;
+  padding: 20px;
+  border: 3px solid #f7bc46;
+  border-radius: 10px;
+  background-color: #783f04;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.wr-style .box {
+  margin-top: 50px;
+  width: 45vw;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  background-color: #783f04;
+  overflow-y: scroll;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid #f7bc46;
+}
+.wr-style .box .match-name{
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+}
+
+.wra-style .box p {
+  justify-self: center;
+  align-self: center;
+  font-size: large;
+}
+
+.wr-style .box::-webkit-scrollbar {
+  display: none;
+}
+
+.wr-style .player {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 50px 10px 30px;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.wr-style .player p {
+  border: 2px solid #f7bc46;
+  width: 20vw;
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  align-content: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+}
+
+.wr-style .player img {
+  border: 2px solid #f7bc46;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.wr-style .leave {
+  border: 2px solid #f7bc46;
+  width: 20vw;
+  text-align: center;
+  font-size: 15px;
+  height: 40px;
+  align-content: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+  text-decoration: none;
+  color: #f7bc46;
+  margin-left: 40px;
+}
+
+.wr-style .continue {
+  margin-top: 20px;
+  border: 2px solid #f7bc46;
+  background-color: #783f04;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #f7bc46;
+  border-radius: 10px;
+}

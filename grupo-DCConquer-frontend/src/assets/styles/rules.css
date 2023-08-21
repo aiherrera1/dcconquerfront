@@ -1,0 +1,136 @@
+.rules-style {
+  background-image: none;
+}
+
+.rules-style section {
+  max-width: 100;
+  margin-top: 40px;
+  padding-left: 250px;
+  padding-right: 20px;
+  /* padding-top: 10px; */
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rules-style .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 600px;
+}
+.rules-style .card img {
+  border-radius: 50px;
+  width: 300px;
+  height: auto;
+}
+.rules-style .card p {
+  line-height: 1.5;
+}
+
+.rules-style #board img {
+  width: 400px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.rules-style #list-cards li {
+  margin-left: 100px;
+  list-style-type: lower-alpha;
+}
+
+.rules-style h5 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.rules-style h4 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+.rules-style h3 {
+  font-size: 40px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+.rules-style h6 {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.rules-style .rules-style li {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.rules-style p {
+  line-height: 1.5;
+  font-size: 16;
+}
+
+.rules-style table,
+.rules-style td,
+.rules-style tr,
+.rules-style th {
+  font-size: 20px;
+  border: 1px solid #f7bc46;
+}
+
+.rules-style tr {
+  height: 40px;
+  text-align: center;
+}
+.rules-style ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rules-style table {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.rules-style nav {
+  overflow: hidden;
+  position: fixed;
+  top: 78px;
+  text-align: center;
+  background-color: #783f04;
+  border-color: #f7bc46;
+  border: solid;
+  border-radius: 5%;
+}
+
+.rules-style nav .container {
+  width: 90%;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+.rules-style nav .container ul li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.rules-style nav .container ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 40px 10px;
+  color: #f7bc46;
+}
+.rules-style nav .container ul li.active {
+  border-radius: 5%;
+  background-color: #54280b;
+  transition: 0.3s ease background-color;
+}
+.rules-style nav .container ul li.active a {
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,133 @@
+.am-style {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.am-style .match img {
+  width: 4rem;
+}
+
+.am-style .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.am-style .label {
+  width: 40vw;
+  padding: 20px 40px;
+  border: 3px solid #f7bc46;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #783f04;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.am-style .box {
+  position: relative;
+  margin-top: 50px;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #783f04;
+  overflow-y: scroll;
+  padding: 20px;
+  border: solid #f7bc46;
+  border-radius: 30px;
+}
+
+.am-style .box::-webkit-scrollbar {
+  display: none;
+}
+
+.am-style .search {
+  display: flex;
+  flex-direction: row;
+  border: #f7bc46 2px solid;
+  border-radius: 10px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.am-style .search input {
+  height: 40px;
+  width: 300px;
+  background-color: #fef0bb;
+  margin-right: 30px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 30px 5px 5px;
+  border: solid #f7bc46;
+}
+
+.am-style .search p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.am-style .match {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #f7bc46;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 60px;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-around;
+}
+
+.am-style .lightened-match {
+  /* background-color: rgba(0, 119, 255, 0.776); */
+  background-image: url("../images/battle_background.png");
+  color: yellow;
+}
+
+.am-style .match:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.am-style .minmax {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.am-style .minmax p {
+  margin-right: 20px;
+}
+
+.am-style .continue a {
+  border: #f7bc46 2px solid;
+  background-color: #783f04;
+  width: 15vw;
+  border-radius: 10px;
+  color: #f7bc46;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.am-style a:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,35 @@
+.ranking-style{
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.ranking-style .background {
+  display: flex;
+  align-items: center;
+}
+
+.ranking-style table {
+  width: 80%;
+  counter-reset: row-num;
+  background-color: #54280b;
+  border-spacing: 0;
+  border: 2px solid #f7bc46;
+  margin-top: 20px;
+}
+
+.ranking-style table td,
+.ranking-style table th {
+  border: 2px solid #f7bc46;
+  text-align: center;
+  padding: 8px;
+}
+.ranking-style table tr td:first-child::before {
+  counter-increment: row-num;
+  content: counter(row-num);
+  text-align: center;
+}

@@ -1,0 +1,480 @@
+openapi: 3.0.3
+info:
+  title: DCConquer
+  description: API Documentation for DCConquer
+  version: '1'
+tags:
+  - name: admin
+    description: Model Admin
+  - name: auth
+    description: Authentication Processes
+  - name: games
+    description: Operations for Games
+  - name: matches
+    description: Operations for Matches
+  - name: players
+    description: Operations for Players
+  - name: players in match
+    description: Operations for Playes In Matches
+  - name: requests
+    description: Operations for Requests
+  - name: turn
+    description: Operations for turns in match
+
+paths:
+  /admin:
+    get:
+      tags:
+        - admin
+      summary: Checks if current player is admin
+      responses:
+        '200':
+          description: Successful operation
+  /registration/signup:
+    post:
+      tags:
+        - auth
+      summary: Creates player on Sign Up
+      responses:
+        '201':
+          description: User Succesfully Created
+        '403':
+          description: Email or username already exists
+  /login:
+    post:
+      tags:
+        - auth
+      summary: Logs User In
+      responses:
+        '201':
+          description: Succesfully loged in
+        '401':
+          description: The Email or Password entered is incorrect
+  /logout:
+    post:
+      tags:
+        - auth
+      summary: Logs User Out
+      responses:
+        '201':
+          description: Succesfully loged out
+  /games:
+    get:
+      tags:
+        - games
+      summary: Gets all games
+      responses:
+        '201':
+          description: Succesfully sent all games
+  /games.create:
+    post:
+      tags:
+        - games
+      summary: It creates a new game
+      responses:
+        '201':
+          description: Game and Match Succesfully Created
+  /games/{game_id}:
+    delete:
+      tags:
+        - games
+      summary: Deletes a game
+      responses:
+        '201':
+          description: Succesfully Deleted
+      parameters:
+        - name: game_id
+          in: path
+          description: ID of game that needs to be deleted
+          required: true
+          schema:
+            type: integer
+  /matches.create/{match_id}:
+    post:
+      tags:
+        - matches
+      summary: It creates all of the neccesary components to start a match
+      responses:
+        '201':
+          description: Succesfully created match
+      parameters:
+        - name: match_id
+          in: path
+          description: ID of match that needs to be created
+          required: true
+          schema:
+            type: integer
+  /matches.show/{match_id}:
+    get:
+      tags:
+        - matches
+      summary: Gets all data for match
+      responses:
+        '201':
+          description: Succesfully fetched all data for match
+      parameters:
+        - name: match_id
+          in: path
+          description: ID of match that needs to be fetched
+          required: true
+          schema:
+            type: integer
+  /matches.edit/{match_id}:
+    put:
+      tags:
+        - matches
+      summary: Edits Match Attributes every turn
+      responses:
+        '201':
+          description: Match attributes were edited succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: ID of match that needs to be edited
+          required: true
+          schema:
+            type: integer
+  /players.show/{player_id}:
+    get:
+      tags:
+        - players
+      summary: Gets data of requested player
+      responses:
+        '200':
+          description: Data of player was fetched succesfully
+      parameters:
+        - name: player_id
+          in: path
+          description: ID of player that needs to be fetched
+          required: true
+          schema:
+            type: integer
+  /players.show:
+    get:
+      tags:
+        - players
+      summary: Gets data of all the players
+      responses:
+        '200':
+          description: Data of players was fetched succesfully
+  /playersmatch.show:
+    get:
+      tags:
+        - players in match
+      summary: Gets all players in all matches
+      responses:
+        '202':
+          description: Data of players in match was fetched succesfully
+  /playersmatch/{match_id}:
+    get:
+      tags:
+        - players in match
+      summary: Gets all players in a match
+      responses:
+        '202':
+          description: Data of players in match was fetched succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: ID of match that the players needed to be fetched are in
+          required: true
+          schema:
+            type: integer
+  /playersmatch.create/{match_id}:
+    post:
+      tags:
+        - players in match
+      summary: Creates Players In Match association so player can be part of the game
+      responses:
+        '202':
+          description: Players In Match created succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: ID of match that the players needed to be fetched are in
+          required: true
+          schema:
+            type: integer
+  /playersmatch.delete/{match_id}/players/{player_id}:
+    delete:
+      tags:
+        - players in match
+      summary: Deletes Player In Match association
+      responses:
+        '201':
+          description: Player removed from match succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: id of match that the player wants to be removed from
+          required: true
+          schema:
+            type: integer
+        - name: player_id
+          in: path
+          description: Id of player that wants to be removed from match
+          required: true
+          schema:
+            type: integer
+  /requests:
+    get:
+      tags:
+        - requests
+      summary: Gets all requests made to all matches
+      responses:
+        '201':
+          description: Requests fetched succesfully
+  /requests/{match_id}:
+    get:
+      tags:
+        - requests
+      summary: Gets all requests made for a certain match
+      responses:
+        '201':
+          description: Requests fetched succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: id of match where requests are made
+          required: true
+          schema:
+            type: integer
+  /requests.create:
+    post:
+      tags:
+        - requests
+      summary: Creates a request for a player for a certain match
+      responses:
+        '201':
+          description: Request created succesfully
+  /turn.show/{match_id}:
+    get:
+      tags:
+        - turn
+      summary: Gets data for the current turn of the match
+      responses:
+        '201':
+          description: Turn was fetched succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: id of the match where the turn needs to be created
+          required: true
+          schema:
+            type: integer
+  /turn.create/{match_id}:
+    post:
+      tags:
+        - turn
+      summary: Creates turn when the last one ended
+      responses:
+        '201':
+          description: Turn was fetched succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: id of match that the player wants to create request
+          required: true
+          schema:
+            type: integer
+  /turn/{match_id}:
+    put:
+      tags:
+        - turn
+      summary: Edits the attributes of the current turn
+      responses:
+        '201':
+          description: Turn was updated succesfully
+      parameters:
+        - name: match_id
+          in: path
+          description: id of match that the turn is being played
+          required: true
+          schema:
+            type: integer
+
+components:
+  schemas:
+    Admin:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        player_id:
+          type: integer
+          example: 4
+    Game:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 10
+        host_id:
+          type: integer
+          example: fehguy
+        name:
+          type: string
+          example: mygame
+        min_players:
+          type: integer
+          example: 2
+        max_players:
+          type: integer
+          example: 6
+        starting_cards:
+          type: integer
+          example: 4
+        active:
+          type: boolean
+          example: true
+        winner_id:
+          type: integer
+          example: 54
+    Match:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 44
+        game_id:
+          type: integer
+          example: 44
+        n_players:
+          type: integer
+          example: 4
+        current_turn:
+          type: integer
+          example: 31
+    Player:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        username:
+          type: string
+          example: aiherrera1
+        email:
+          type: string
+          example: aiherrera1@uc.cl
+        password:
+          type: string
+          example: 'A24aQ!$da244'
+        avatar:
+          type: string
+          example: 'aztecs.png'
+    PlayersInMatch:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 10
+        match_id:
+          type: integer
+          example: 4
+        player_id:
+          type: integer
+          example: 24
+        wall_cards:
+          type: integer
+          example: 3
+        dice_cards:
+          type: integer
+          example: 4
+        ship_cards:
+          type: integer
+          example: 1
+        turn:
+          type: integer
+          example: 4
+    Request:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 42
+        match_id:
+          type: integer
+          example: 25
+        player_id:
+          type: integer
+          example: 14
+    Session:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 10
+        userid:
+          type: integer
+          example: 24
+    Territory:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 422
+        match_id:
+          type: integer
+          example: 59
+        player_id:
+          type: integer
+          example: 52
+        position_id:
+          type: integer
+          example: 2
+        warriors:
+          type: integer
+          example: 42
+        ship_level:
+          type: integer
+          example: 2
+    Turn:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 52
+        match_id:
+          type: integer
+          example: 23
+        player_turn:
+          type: integer
+          example: 4
+        current_turn:
+          type: integer
+          example: 24
+        card:
+          type: boolean
+          example: true
+        dices:
+          type: string
+          example: 'dice1,dice5,dice2,dice1,dice5'
+        threw_first:
+          type: boolean
+          example: true
+        threw_second:
+          type: boolean
+          example: false
+        dice_card:
+          type: boolean
+          example: false
+    Wall:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 42
+        match_id:
+          type: integer
+          example: 18
+        player_id:
+          type: integer
+          example: 3
+        territory_id_1:
+          type: integer
+          example: 2
+        territory_id_2:
+          type: integer
+          example: 3

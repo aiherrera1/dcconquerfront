@@ -1,0 +1,123 @@
+.registration-style {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.registration-style body {
+    font-family: 'Berry Rotunda';
+    font-size: 15px;
+}
+
+.registration-style input {
+    font-family: 'Berry Rotunda';
+}
+
+.registration-style .general-grid {
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.registration-style .general-grid-items {
+    border-radius: 5px;
+    background-color: #783f04;
+    border: 2px solid #f7bc46;
+    color: #f7bc46;
+    justify-items: center;
+    padding: 15px 20px 10px 20px;
+    width: fit-content;
+}
+
+.registration-style .form-grid {
+    margin-top: 0px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+.registration-style .sign-up {
+    font-size: 40px;
+    padding: 30px 30px 20px 30px;
+}
+
+.registration-style .inner-grid-1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    grid-gap: 5px;
+    padding: 20px 50px;
+}
+
+.registration-style .inner-grid-items {
+    border: 1px solid #f7bc46;
+}
+
+.registration-style .form_input {
+    border-radius: 5px;
+    background-color: #fef0bb;
+    font-family: 'Algerian';
+    font-size: large;
+    height: 30px;
+    width: 300px;
+}
+
+.registration-style .inner-grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    grid-gap: 20px;
+    padding: 20px 80px;
+}
+
+.registration-style .inner-grid-3 {
+    display: grid;
+    grid-gap: 0px;
+    grid-column-gap: 25px;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    text-align: center;
+    justify-items: center;
+}
+
+.registration-style .avatars-img {
+    width: 90px;
+    height: auto;
+    float: none;
+    margin-right: 0px;
+}
+
+.registration-style .unlightened-avatar {
+    padding: 2px;
+}
+
+.registration-style .lightened-avatar {
+    border: 2px solid yellow;
+}
+
+.registration-style .avatars-name {
+    font-size: 12px;
+    text-align: center;
+}
+
+.registration-style .long-avatar-names {
+    width: min-content;
+}
+
+.registration-style .button {
+    border-radius: 5px;
+    background-color: #783f04;
+    border: 2px solid #f7bc46;
+    color: #f7bc46;
+    font-family: 'Berry Rotunda';
+    font-size: 30px;
+    justify-items: center;
+    padding: 18px 20px 10px 20px;
+    width: fit-content;
+    text-decoration: none;
+}

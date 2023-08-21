@@ -1,0 +1,89 @@
+.admin-style{
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.admin-style .background {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.admin-style table {
+  background-color: #54280b;
+  border-spacing: 0;
+  border: 2px solid #f7bc46;
+  margin-top: 20px;
+}
+
+.admin-style table td,
+.admin-style table th {
+  border: 2px solid #f7bc46;
+  text-align: center;
+  padding: 8px;
+}
+
+.admin-style table button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.admin-style .links {
+  background-color: #783f04;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 2px #f7bc46;
+}
+
+.admin-style .links a {
+  /* border: #f7bc46 2px solid; */
+  padding: 20px;
+  text-decoration: none;
+  color: #f7bc46;
+}
+
+.admin-style .links a:hover {
+  background-color: #84471e;
+}
+
+.admin-style h1 {
+  margin-top: 30px;
+  background-color: #54280b;
+  border: #f7bc46 solid 2px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30vw;
+  text-align: center;
+}
+
+.admin-style .admin-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.admin-links button{
+  margin-top: 20px;
+  background-color: #84471e;
+  color: #f7bc46;
+  font-family: "Berry Rotunda";
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.admin-links button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  0 17px 50px 0 rgba(0, 0, 0, 0.19);;
+}

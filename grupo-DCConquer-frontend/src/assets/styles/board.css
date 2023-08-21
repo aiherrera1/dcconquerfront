@@ -1,0 +1,254 @@
+.match-style .board {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  margin-top: 0px;
+  --width: max(3.5vw, 50px);
+  --height: calc(var(--width) * 1.732);
+}
+
+
+.match-style .right,
+.match-style .mid,
+.match-style .left {
+  position: absolute;
+  height: var(--height);
+  width: var(--width);
+  background-color: white;
+  border-top: solid black;
+  border-bottom: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.match-style .right {
+  transform: rotate(-60deg);
+}
+
+.match-style .left {
+  transform: rotate(60deg);
+}
+
+.match-style .hex {
+  position: relative;
+}
+
+
+.match-style .row-1 {
+  top: calc(-5 * var(--height) / 2);
+}
+
+.match-style .row-2 {
+  top: calc(-4 * var(--height) / 2);
+}
+
+.match-style .row-3 {
+  top: calc(-3 * var(--height) / 2);
+}
+
+.match-style .row-4 {
+  top: calc(-2 * var(--height) *0.5)
+}
+
+.match-style .row-5 {
+  top: calc(-1 * var(--height) / 2);
+}
+
+.match-style .row-7 {
+  top: calc(1 * var(--height) / 2);
+}
+
+.match-style .row-8 {
+  top: calc(2 * var(--height) / 2);
+}
+
+.match-style .row-9 {
+  top: calc(3 * var(--height) / 2);
+}
+
+.match-style .col-1 {
+  left: calc(-2 * var(--width) * 1.5);
+}
+
+.match-style .col-2 {
+  left: calc(-1 * var(--width) * 1.5);
+}
+
+.match-style .col-3 {
+  left: 0px;
+}
+
+.match-style .col-4 {
+  left: calc(var(--width) * 1.5);
+}
+
+.match-style .col-5 {
+  left: calc(2 * var(--width) * 1.5);
+}
+
+/* https://hexagoncalculator.apphb.com/ */
+
+.match-style .wall-top,
+.match-style .wall-bottom{
+  width: calc(var(--width)*0.7);
+  height: 1rem;
+  
+  /* background-color: #1982c4 !important; */
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid;
+}
+.match-style .wall-top {
+
+  transform: translateY(calc(var(--height)*-0.5));
+}
+
+.match-style .wall-bottom {
+  transform: translateY(calc(var(--height)/2));
+
+}
+
+.match-style .stripe {
+  border: 1px solid black;
+  height: 1rem;
+  width: calc(var(--width)*0.25);
+}
+
+.match-style .p0-wall,
+.match-style .p0-color .right,
+.match-style .p0-color .left,
+.match-style .p0-color .mid {
+  background-color: #ff595e;
+}
+
+.match-style .p1-wall,
+.match-style .p1-color .right,
+.match-style .p1-color .left,
+.match-style .p1-color .mid {
+  background-color: #ff924c;
+}
+
+
+.match-style .p2-wall,
+.match-style .p2-color .right,
+.match-style .p2-color .left,
+.match-style .p2-color .mid {
+  background-color: #ffca3a;
+}
+.match-style .p3-wall,
+.match-style .p3-color .right,
+.match-style .p3-color .left,
+.match-style .p3-color .mid {
+  background-color: #8ac926;
+}
+
+.match-style .p4-wall,
+.match-style .p4-color .right,
+.match-style .p4-color .left,
+.match-style .p4-color .mid {
+  background-color: #1982c4;
+}
+.match-style .p5-wall,
+.match-style .p5-color .right,
+.match-style .p5-color .left,
+.match-style .p5-color .mid {
+  background-color: #6a4c93;
+}
+
+
+.match-style .board .available:hover .right,
+.match-style .board .available:hover .left,
+.match-style .board .available:hover .mid,
+.match-style .board .available:hover .warriors
+{
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.2);
+}
+
+.match-style .board .over .right,
+.match-style .board .over .left,
+.match-style .board .over .mid,
+.match-style .board .over .warriors
+{
+  box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.3);
+
+}
+
+.match-style .ship{
+  width: 5rem;
+  position: absolute;
+  background-color: transparent;
+}
+
+.match-style .ship-container{
+  position: absolute;
+}
+
+
+.ship-container1{
+  /* left: calc(var(--width)*0); */
+  bottom: calc(var(--height)*0.35);
+}
+
+.ship-container2{
+  left: calc(var(--width)*0.6);
+  bottom: calc(var(--height)*0.35);
+}
+
+.ship-container3{
+  left: calc(var(--width)*1);
+}
+
+.ship-container4{
+  left: calc(var(--width)*1);
+}
+
+.ship-container5{
+  left: calc(var(--width)*1);
+}
+
+.ship-container6{
+  left: calc(var(--width)*0.6);
+  top: calc(var(--height)*0.7);
+}
+
+.ship-container7{
+  top: calc(var(--height)*0.8);
+}
+
+.ship-container8{
+  right: calc(var(--width)*0.6);
+  top: calc(var(--height)*0.7);
+}
+.ship-container9{
+  right: calc(var(--width)*1);
+  top: calc(var(--height)*0.2);
+}
+.ship-container10{
+  right: calc(var(--width)*1);
+  top: calc(var(--height)*0.2);
+}
+.ship-container11{
+  right: calc(var(--width)*1);
+  top: calc(var(--height)*0.2);
+}
+.ship-container12{
+  right: calc(var(--width)*0.6);
+  bottom: calc(var(--height)*0.3);
+}
+
+.match-style .hex .topright{
+  position: absolute;
+  color: white;
+  top: 1.3rem;
+  left: 2.2rem;
+  background-color: transparent;
+  font-size: 1rem;
+}

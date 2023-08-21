@@ -1,0 +1,150 @@
+.about-style {
+  background-image: url("../images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.about-style .background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-style .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.about-style .column {
+  float: left;
+  margin-bottom: 16px;
+  padding: 20px;
+}
+
+.about-style .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: rgba(120, 64, 22, 1);
+  border: 5px solid rgba(193, 163, 87, 1);
+  border-radius: 20px;
+}
+
+.about-style .flip-box img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.about-style .flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.about-style .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.about-style .flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.about-style .flip-box-front,
+.about-style .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.about-style .flip-box-front {
+  /* background-color: #bbb; */
+  color: black;
+}
+
+/* Style the back side */
+.about-style .flip-box-back {
+  /* background-color: dodgerblue; */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.about-style .about-section {
+  background-color: rgba(120, 64, 22, 1);
+  border: 5px solid rgba(193, 163, 87, 1);
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.about-style h2 {
+  color: #f7bc46;
+  background-color: #783f04;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-style .container {
+  padding: 0 16px;
+}
+
+.about-style .container h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-style .container p {
+  margin: 20px 0px;
+}
+
+
+.about-style .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #f7bc46;
+  background-color: #54280b;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.about-style .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-style .contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
